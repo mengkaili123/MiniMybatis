@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-
-<mapper namespace="com.kfit.mybatis.demo.mapper.DemoMapper">
-    <select id="getById" resultType="com.kfit.mybatis.demo.bean.Demo">
-        select *from demo where id = ?
-    </select>
-
-    <select id="getAll" resultType="com.kfit.mybatis.demo.bean.Demo">
-        select *from demo
+<mapper nameSpace="com.liugh.mapper.UserMapper">
+    <select id="getUserById" resultType ="com.liugh.bean.User">
+        select * from user where id = ?
     </select>
 </mapper>
